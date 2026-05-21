@@ -10,9 +10,12 @@
 
 #include "../math/vec3.hpp"
 
-struct Particle{
+namespace Body{
+
+struct Body{
     private:
         Vec3 position;
+        Vec3 prev_position;
         Vec3 velocity;
         Vec3 acceleration;
         Vec3 forceAccumulator;
@@ -23,7 +26,7 @@ struct Particle{
     public:
 
         // Ajustado: construtor aceita (pos, vel, mass, radius, color[, acc])
-        Particle(const Vec3& pos, const Vec3& vel, float m, float rad,
+        Body(const Vec3& pos, const Vec3& vel, float m, float rad,
                  const glm::vec3& col = glm::vec3(1.0f), const Vec3& acc = Vec3::zero()) :
             position(pos),
             velocity(vel),
@@ -46,21 +49,24 @@ struct Particle{
         float getRadius() const { return radius; }
         void setRadius(float r) { radius = r; }
 
+        void verlet_integration(float dt){
+            acceleration = forceAccumulator / mass;
+
+            Vec3 temp     = position;
+            Vec3 velocity = position - prev_position;
+
+            position      = position + velocity + acceleration * (dt * dt);
+            prev_position = temp;
+
+            clearForces();
+            acceleration.clear();
+        }
+
         void rk4_step(Vec3 Force, float timestep) {
-
-                std::array<Vec3, 4> kp = {0, 0, 0, 0};
-                std::array<Vec3, 4> kv = {acceleration, acceleration, acceleration, acceleration};
-
-                Vec3 acceleration = Force / mass;
-                Vec3 pos0 = position;
-                Vec3 vel0 = velocity;
-
-                //k1
-                kp[0] = vel0;
-                //k2
-                kp[1] = vel0 * (timestep / 2) + kv[0] * (timestep * timestep / 2);
-                
+                //implementation later
         }
 };
+
+}
 
 #endif
