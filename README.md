@@ -17,7 +17,8 @@ N-body-simulation/
     |__benchmark/
 |_main.cpp
 |_CmakeLists.txt
-``
+```
+
 ## Model:
 
 $$
