@@ -5,7 +5,7 @@ A 3d graphic simulation of n-bodies floating in space and interacting gravitatio
 ---
 
 ## Directories
-
+```
 N-body-simulation:
 |
 |__build/
@@ -17,7 +17,7 @@ N-body-simulation:
     |__benchmark/
 |_main.cpp
 |_CmakeLists.txt
-
+```
 ## Model:
 
 $$
