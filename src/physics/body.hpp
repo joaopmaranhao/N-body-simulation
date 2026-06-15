@@ -56,14 +56,21 @@ struct Body{
         void verlet_integration(float dt){
             acceleration = forceAccumulator / mass;
 
-            Vec3 temp     = position;
-            Vec3 velocity = position - prev_position;
+            Vec3 temp = position;
+            
+            // CORREÇÃO: Atualiza o atributo 'velocity' da classe para o renderer ler a velocidade real
+            velocity = (position - prev_position) / dt; 
 
-            position      = position + velocity + acceleration * (dt * dt);
+            position      = position + (position - prev_position) + acceleration * (dt * dt);
             prev_position = temp;
 
             clearForces();
             acceleration.clear();
+        }
+
+        void initVerlet(float dt) noexcept {
+        // Posição anterior = Posição atual - (Velocidade inicial * dt)
+            prev_position = position - (velocity * dt);
         }
 
         void rk4_step(Vec3 Force, float timestep) {

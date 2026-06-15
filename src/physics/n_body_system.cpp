@@ -19,8 +19,8 @@ void NBodySystem::setBodyPosition(int index, const Vec3& pos) {
         bodies[index].setPosition(pos);
 }
  
-const std::shared_ptr<std::vector<Body::Body>> NBodySystem::getBodies() const {
-        return std::make_shared<std::vector<Body::Body>>(bodies);
+const std::vector<Body::Body>& NBodySystem::getBodies() const {
+        return bodies;
 }
  
 const float NBodySystem::getTimeStep() const {
@@ -67,12 +67,21 @@ void NBodySystem::handleCollisions() {
 }
  
 void NBodySystem::updateVerlet() {
+        static bool firstFrame = true;
+    
+        if (firstFrame) {
+                for (auto& body : bodies) {
+                body.initVerlet(dt); // Configura o prev_position correto para todos os corpos
+                }
+                firstFrame = false;
+        }
+
         accumulateGravity(bodies);
- 
+        
         for (auto& body : bodies) {
                 body.verlet_integration(dt);
         }
- 
+        
         handleCollisions();
 }
  

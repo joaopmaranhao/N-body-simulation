@@ -90,7 +90,7 @@ int main() {
 
                 // Obtém a lista atualizada de corpos para renderizar
                 // Como getBodies retorna um shared_ptr, pegamos a referência do vetor guardado nele
-                const auto& currentBodies = *(physicsSystem.getBodies());
+                const auto& currentBodies = physicsSystem.getBodies();
 
                 // Passa os corpos atualizados para o renderer
                 renderer.render(currentBodies, dt);
