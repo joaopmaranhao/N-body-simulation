@@ -26,6 +26,7 @@ struct Body{
     public:
 
         // Ajustado: construtor aceita (pos, vel, mass, radius, color[, acc])
+        Body() = default;
         Body(const Vec3& pos, const Vec3& vel, float m, float rad,
                  const glm::vec3& col = glm::vec3(1.0f), const Vec3& acc = Vec3::zero()) :
             position(pos),
@@ -43,10 +44,13 @@ struct Body{
         void setPosition(const Vec3& p) noexcept { position = p; }
         const glm::vec3& getColor() const { return color; }
 
-        float getMass() const { return mass; }
+        const float& getMass() const noexcept { return mass; }
         void setMass(float m) { mass = std::max(1e-6f, m); }
 
-        float getRadius() const { return radius; }
+        const Vec3& getVelocity() const noexcept { return velocity; }
+        void setVelocity(const Vec3& v) { velocity = v; }
+
+        const float getRadius() const noexcept { return radius; }
         void setRadius(float r) { radius = r; }
 
         void verlet_integration(float dt){

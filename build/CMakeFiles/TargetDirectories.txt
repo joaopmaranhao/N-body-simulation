@@ -1,0 +1,4 @@
+/home/joao-pedro/git/N-body-simulation/build/CMakeFiles/glad_lib.dir
+/home/joao-pedro/git/N-body-simulation/build/CMakeFiles/NBody3D.dir
+/home/joao-pedro/git/N-body-simulation/build/CMakeFiles/edit_cache.dir
+/home/joao-pedro/git/N-body-simulation/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/NBody3D.dir/main.cpp.o CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o -o NBody3D  libglad_lib.a /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 -ldl /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so 
