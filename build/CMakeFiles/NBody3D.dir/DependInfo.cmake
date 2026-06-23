@@ -8,17 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/joao-pedro/git/N-body-simulation/main.cpp" "CMakeFiles/NBody3D.dir/main.cpp.o" "gcc" "CMakeFiles/NBody3D.dir/main.cpp.o.d"
-  "/home/joao-pedro/git/N-body-simulation/src/physics/n_body_system.cpp" "CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o" "gcc" "CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o.d"
-  "/home/joao-pedro/git/N-body-simulation/src/renderer/renderer.cpp" "CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o" "gcc" "CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o.d"
+  "/home/joao/git/N-body-simulation/main.cpp" "CMakeFiles/NBody3D.dir/main.cpp.o" "gcc" "CMakeFiles/NBody3D.dir/main.cpp.o.d"
+  "/home/joao/git/N-body-simulation/src/physics/n_body_system.cpp" "CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o" "gcc" "CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o.d"
+  "/home/joao/git/N-body-simulation/src/renderer/renderer.cpp" "CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o" "gcc" "CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/joao/git/N-body-simulation/build/CMakeFiles/glad_lib.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
