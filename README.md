@@ -13,7 +13,7 @@ cmake --build build --parallel 2
 
 The executable is generated at `build/NBody3D`.
 
-The project requires CMake, a C++17 compiler, OpenGL, and GLFW installed on the system. GLAD and GLM are included in `libs/`.
+The project requires CMake, a C++17 compiler, OpenGL, GLFW, and GLM installed on the system. GLAD is included in `libs/glad/`.
 
 ## Project Structure
 
