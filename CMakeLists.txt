@@ -26,6 +26,7 @@ target_include_directories(glad_lib PUBLIC
 add_executable(NBody3D
     main.cpp
     src/application/simulation_app.cpp
+    src/physics/body_builder.cpp
     src/physics/n_body_system.cpp
     src/physics/n_body_system_builder.cpp
     src/renderer/renderer.cpp

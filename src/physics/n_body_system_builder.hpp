@@ -3,6 +3,8 @@
 
 #include "n_body_system.hpp"
 
+#include <initializer_list>
+
 class NBodySystemBuilder {
 public:
     NBodySystemBuilder& addBody(
@@ -11,6 +13,23 @@ public:
         float mass,
         float radius
     );
+
+    NBodySystemBuilder& addBody(Body::Body body);
+
+    template <typename Iterable>
+    NBodySystemBuilder& addBodies(const Iterable& bodies) {
+        for (const auto& body : bodies) {
+            system.addBody(body);
+        }
+        return *this;
+    }
+
+    NBodySystemBuilder& addBodies(std::initializer_list<Body::Body> bodies) {
+        for (const auto& body : bodies) {
+            system.addBody(body);
+        }   
+        return *this;
+    }
 
     NBodySystem build();
 

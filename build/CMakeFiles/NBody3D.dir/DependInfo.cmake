@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/joao/git/N-body-simulation/main.cpp" "CMakeFiles/NBody3D.dir/main.cpp.o" "gcc" "CMakeFiles/NBody3D.dir/main.cpp.o.d"
   "/home/joao/git/N-body-simulation/src/application/simulation_app.cpp" "CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o" "gcc" "CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o.d"
+  "/home/joao/git/N-body-simulation/src/physics/body_builder.cpp" "CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.o" "gcc" "CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.o.d"
   "/home/joao/git/N-body-simulation/src/physics/n_body_system.cpp" "CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o" "gcc" "CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o.d"
   "/home/joao/git/N-body-simulation/src/physics/n_body_system_builder.cpp" "CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o" "gcc" "CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o.d"
   "/home/joao/git/N-body-simulation/src/renderer/renderer.cpp" "CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o" "gcc" "CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o.d"
