@@ -83,10 +83,38 @@ CMakeFiles/NBody3D.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NBody3D.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/git/N-body-simulation/main.cpp -o CMakeFiles/NBody3D.dir/main.cpp.s
 
+CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o: CMakeFiles/NBody3D.dir/flags.make
+CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o: ../src/application/simulation_app.cpp
+CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o: CMakeFiles/NBody3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/git/N-body-simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o -MF CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o.d -o CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o -c /home/joao/git/N-body-simulation/src/application/simulation_app.cpp
+
+CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/git/N-body-simulation/src/application/simulation_app.cpp > CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.i
+
+CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/git/N-body-simulation/src/application/simulation_app.cpp -o CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.s
+
+CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.o: CMakeFiles/NBody3D.dir/flags.make
+CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.o: ../src/physics/body_builder.cpp
+CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.o: CMakeFiles/NBody3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/git/N-body-simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.o -MF CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.o.d -o CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.o -c /home/joao/git/N-body-simulation/src/physics/body_builder.cpp
+
+CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/git/N-body-simulation/src/physics/body_builder.cpp > CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.i
+
+CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/git/N-body-simulation/src/physics/body_builder.cpp -o CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.s
+
 CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o: CMakeFiles/NBody3D.dir/flags.make
 CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o: ../src/physics/n_body_system.cpp
 CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o: CMakeFiles/NBody3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/git/N-body-simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/git/N-body-simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o -MF CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o.d -o CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o -c /home/joao/git/N-body-simulation/src/physics/n_body_system.cpp
 
 CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.i: cmake_force
@@ -97,10 +125,24 @@ CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/git/N-body-simulation/src/physics/n_body_system.cpp -o CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.s
 
+CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o: CMakeFiles/NBody3D.dir/flags.make
+CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o: ../src/physics/n_body_system_builder.cpp
+CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o: CMakeFiles/NBody3D.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/git/N-body-simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o -MF CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o.d -o CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o -c /home/joao/git/N-body-simulation/src/physics/n_body_system_builder.cpp
+
+CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/git/N-body-simulation/src/physics/n_body_system_builder.cpp > CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.i
+
+CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/git/N-body-simulation/src/physics/n_body_system_builder.cpp -o CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.s
+
 CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o: CMakeFiles/NBody3D.dir/flags.make
 CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o: ../src/renderer/renderer.cpp
 CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o: CMakeFiles/NBody3D.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/git/N-body-simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/git/N-body-simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o -MF CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o.d -o CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o -c /home/joao/git/N-body-simulation/src/renderer/renderer.cpp
 
 CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.i: cmake_force
@@ -114,14 +156,20 @@ CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.s: cmake_force
 # Object files for target NBody3D
 NBody3D_OBJECTS = \
 "CMakeFiles/NBody3D.dir/main.cpp.o" \
+"CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o" \
+"CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.o" \
 "CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o" \
+"CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o" \
 "CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o"
 
 # External object files for target NBody3D
 NBody3D_EXTERNAL_OBJECTS =
 
 NBody3D: CMakeFiles/NBody3D.dir/main.cpp.o
+NBody3D: CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o
+NBody3D: CMakeFiles/NBody3D.dir/src/physics/body_builder.cpp.o
 NBody3D: CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o
+NBody3D: CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o
 NBody3D: CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o
 NBody3D: CMakeFiles/NBody3D.dir/build.make
 NBody3D: libglad_lib.a
@@ -129,7 +177,7 @@ NBody3D: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
 NBody3D: /usr/lib/x86_64-linux-gnu/libGLX.so
 NBody3D: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 NBody3D: CMakeFiles/NBody3D.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/joao/git/N-body-simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable NBody3D"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/joao/git/N-body-simulation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable NBody3D"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NBody3D.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

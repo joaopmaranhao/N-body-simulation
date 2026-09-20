@@ -14,7 +14,7 @@ class Vec3{
         Vec3() : x(0.0f), y(0.0f), z(0.0f) {}
         Vec3(float x, float y, float z) : x(x), y(y), z(z) {}
 
-        //Operation overload 
+        //Operation overload
         Vec3 operator+(const Vec3& other) const { return Vec3(x + other.x, y + other.y, z + other.z); }
         Vec3 operator-(const Vec3& other) const { return Vec3(x - other.x, y - other.y, z - other.z); }
         Vec3 operator*(const float scalar) const { return Vec3(x * scalar, y * scalar, z * scalar); }
@@ -25,7 +25,7 @@ class Vec3{
         Vec3& operator*=(float scalar) { x *= scalar; y *= scalar; z *= scalar; return *this; }
         Vec3& operator/=(float scalar) { x /= scalar; y /= scalar; z /= scalar; return *this; }
 
-        //getters and setters 
+        //getters and setters
         float getX() const { return x; }
         float getY() const { return y; }
         float getZ() const { return z; }
