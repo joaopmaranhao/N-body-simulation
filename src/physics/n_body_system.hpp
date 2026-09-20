@@ -23,10 +23,10 @@ public:
     const float getTimeStep() const;
 
     float distance(const Vec3& a, const Vec3& b);
-    
+
     void addBody(const Body::Body& b);
     void setBodyPosition(int index, const Vec3& pos);
-    
+
     void handleCollisions();
 
     void updateVerlet();

@@ -8,7 +8,7 @@
 #include <vector>
 #include "../physics/body.hpp"
 
-using uint32 = unsigned int; 
+using uint32 = unsigned int;
 
 class Renderer3D {
 public:

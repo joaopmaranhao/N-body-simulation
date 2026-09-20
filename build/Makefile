@@ -190,6 +190,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBody3D.dir/build.make CMakeFiles/NBody3D.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/application/simulation_app.o: src/application/simulation_app.cpp.o
+.PHONY : src/application/simulation_app.o
+
+# target to build an object file
+src/application/simulation_app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBody3D.dir/build.make CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o
+.PHONY : src/application/simulation_app.cpp.o
+
+src/application/simulation_app.i: src/application/simulation_app.cpp.i
+.PHONY : src/application/simulation_app.i
+
+# target to preprocess a source file
+src/application/simulation_app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBody3D.dir/build.make CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.i
+.PHONY : src/application/simulation_app.cpp.i
+
+src/application/simulation_app.s: src/application/simulation_app.cpp.s
+.PHONY : src/application/simulation_app.s
+
+# target to generate assembly for a file
+src/application/simulation_app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBody3D.dir/build.make CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.s
+.PHONY : src/application/simulation_app.cpp.s
+
 src/physics/n_body_system.o: src/physics/n_body_system.cpp.o
 .PHONY : src/physics/n_body_system.o
 
@@ -213,6 +237,30 @@ src/physics/n_body_system.s: src/physics/n_body_system.cpp.s
 src/physics/n_body_system.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBody3D.dir/build.make CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.s
 .PHONY : src/physics/n_body_system.cpp.s
+
+src/physics/n_body_system_builder.o: src/physics/n_body_system_builder.cpp.o
+.PHONY : src/physics/n_body_system_builder.o
+
+# target to build an object file
+src/physics/n_body_system_builder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBody3D.dir/build.make CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o
+.PHONY : src/physics/n_body_system_builder.cpp.o
+
+src/physics/n_body_system_builder.i: src/physics/n_body_system_builder.cpp.i
+.PHONY : src/physics/n_body_system_builder.i
+
+# target to preprocess a source file
+src/physics/n_body_system_builder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBody3D.dir/build.make CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.i
+.PHONY : src/physics/n_body_system_builder.cpp.i
+
+src/physics/n_body_system_builder.s: src/physics/n_body_system_builder.cpp.s
+.PHONY : src/physics/n_body_system_builder.s
+
+# target to generate assembly for a file
+src/physics/n_body_system_builder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NBody3D.dir/build.make CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.s
+.PHONY : src/physics/n_body_system_builder.cpp.s
 
 src/renderer/renderer.o: src/renderer/renderer.cpp.o
 .PHONY : src/renderer/renderer.o
@@ -254,9 +302,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/application/simulation_app.o"
+	@echo "... src/application/simulation_app.i"
+	@echo "... src/application/simulation_app.s"
 	@echo "... src/physics/n_body_system.o"
 	@echo "... src/physics/n_body_system.i"
 	@echo "... src/physics/n_body_system.s"
+	@echo "... src/physics/n_body_system_builder.o"
+	@echo "... src/physics/n_body_system_builder.i"
+	@echo "... src/physics/n_body_system_builder.s"
 	@echo "... src/renderer/renderer.o"
 	@echo "... src/renderer/renderer.i"
 	@echo "... src/renderer/renderer.s"

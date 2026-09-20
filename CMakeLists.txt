@@ -13,10 +13,10 @@ find_package(glfw3  REQUIRED)
 # =============================================================================
 # Criar uma biblioteca separada apenas para o GLAD (Garante a compilação em C)
 # =============================================================================
-add_library(glad_lib STATIC 
+add_library(glad_lib STATIC
     ${CMAKE_SOURCE_DIR}/libs/glad/src/glad.c
 )
-target_include_directories(glad_lib PUBLIC 
+target_include_directories(glad_lib PUBLIC
     ${CMAKE_SOURCE_DIR}/libs/glad/include
 )
 
@@ -25,7 +25,9 @@ target_include_directories(glad_lib PUBLIC
 # =============================================================================
 add_executable(NBody3D
     main.cpp
+    src/application/simulation_app.cpp
     src/physics/n_body_system.cpp
+    src/physics/n_body_system_builder.cpp
     src/renderer/renderer.cpp
 )
 

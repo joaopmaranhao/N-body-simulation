@@ -238,7 +238,7 @@ void Renderer3D::updateInstanceBuffer(const std::vector<Body::Body>& bodies) {
             b.getVelocity().getX(),
             b.getVelocity().getY(),
             b.getVelocity().getZ()
-        ));                          
+        ));
         minSpeed = std::min(minSpeed, s);
         maxSpeed = std::max(maxSpeed, s);
     }
@@ -253,7 +253,7 @@ void Renderer3D::updateInstanceBuffer(const std::vector<Body::Body>& bodies) {
             b.getVelocity().getX(),
             b.getVelocity().getY(),
             b.getVelocity().getZ()
-        ));                                   
+        ));
         glm::vec3 col = velocityToColor(speed, minSpeed, maxSpeed);
 
         data.push_back(b.getPosition().getX());
@@ -447,7 +447,7 @@ void scroll_callback_3d(GLFWwindow* window, double xoffset, double yoffset) {
 void mouse_button_callback_3d(GLFWwindow* window, int button, int action, int /*mods*/) {
     auto* r = static_cast<Renderer3D*>(glfwGetWindowUserPointer(window));
     if (!r) return;
-    
+
     if (button == GLFW_MOUSE_BUTTON_LEFT) {
         if (action == GLFW_PRESS) {
             r->setMousePressed(true);

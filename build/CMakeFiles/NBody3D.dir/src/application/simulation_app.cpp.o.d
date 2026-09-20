@@ -1,5 +1,6 @@
-CMakeFiles/NBody3D.dir/main.cpp.o: \
- /home/joao/git/N-body-simulation/main.cpp /usr/include/stdc-predef.h \
+CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o: \
+ /home/joao/git/N-body-simulation/src/application/simulation_app.cpp \
+ /usr/include/stdc-predef.h \
  /home/joao/git/N-body-simulation/src/application/simulation_app.hpp \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -148,7 +149,9 @@ CMakeFiles/NBody3D.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/joao/git/N-body-simulation/src/physics/n_body_system_builder.hpp \
+ /home/joao/git/N-body-simulation/libs/glad/include/glad/glad.h \
+ /home/joao/git/N-body-simulation/libs/glad/include/KHR/khrplatform.h \
+ /usr/include/GLFW/glfw3.h \
  /home/joao/git/N-body-simulation/src/physics/n_body_system.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/ostream \
  /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \
@@ -376,4 +379,6 @@ CMakeFiles/NBody3D.dir/main.cpp.o: \
  /usr/include/glm/ext/vector_uint1_sized.hpp /usr/include/c++/11/cstring \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/glm/gtc/type_ptr.inl \
- /home/joao/git/N-body-simulation/src/physics/../math/vec3.hpp
+ /home/joao/git/N-body-simulation/src/physics/../math/vec3.hpp \
+ /home/joao/git/N-body-simulation/src/renderer/renderer.hpp \
+ /home/joao/git/N-body-simulation/src/renderer/../physics/body.hpp

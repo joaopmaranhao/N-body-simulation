@@ -57,9 +57,9 @@ struct Body{
             acceleration = forceAccumulator / mass;
 
             Vec3 temp = position;
-            
+
             // CORREÇÃO: Atualiza o atributo 'velocity' da classe para o renderer ler a velocidade real
-            velocity = (position - prev_position) / dt; 
+            velocity = (position - prev_position) / dt;
 
             position      = position + (position - prev_position) + acceleration * (dt * dt);
             prev_position = temp;

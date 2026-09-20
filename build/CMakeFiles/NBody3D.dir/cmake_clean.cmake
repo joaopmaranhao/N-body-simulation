@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/NBody3D.dir/main.cpp.o"
   "CMakeFiles/NBody3D.dir/main.cpp.o.d"
+  "CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o"
+  "CMakeFiles/NBody3D.dir/src/application/simulation_app.cpp.o.d"
   "CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o"
   "CMakeFiles/NBody3D.dir/src/physics/n_body_system.cpp.o.d"
+  "CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o"
+  "CMakeFiles/NBody3D.dir/src/physics/n_body_system_builder.cpp.o.d"
   "CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o"
   "CMakeFiles/NBody3D.dir/src/renderer/renderer.cpp.o.d"
   "NBody3D"
