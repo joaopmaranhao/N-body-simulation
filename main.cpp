@@ -6,13 +6,15 @@
 #include <cstddef>
 #include <vector>
 
+//Example of the API use, you can change this part to other simulations with different parameters
+
 int main() {
     constexpr std::size_t planetCount = 16;
     constexpr float gravitationalConstant = 6.674e-11f;
     constexpr float starMass = 1.0e13f;
     constexpr float pi = 3.14159265358979323846f;
 
-    std::vector<Body::Body> bodies;
+    std::vector<Body> bodies;
     bodies.reserve(planetCount + 1);
 
     bodies.push_back(

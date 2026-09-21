@@ -28,7 +28,7 @@ public:
     Renderer3D(uint32 scrW, uint32 scrH);
 
     void init();
-    void render(const std::vector<Body::Body>& bodies, float dt);
+    void render(const std::vector<Body>& bodies, float dt);
     void processInput(GLFWwindow* window, float dt);
     void cleanup();
 
@@ -52,7 +52,7 @@ private:
 
     // Instance buffer
     uint32 instanceVBO;
-    void updateInstanceBuffer(const std::vector<Body::Body>& bodies);
+    void updateInstanceBuffer(const std::vector<Body>& bodies);
 
     // Matrizes
     glm::mat4 view;

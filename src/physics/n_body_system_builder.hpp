@@ -14,7 +14,7 @@ public:
         float radius
     );
 
-    NBodySystemBuilder& addBody(Body::Body body);
+    NBodySystemBuilder& addBody(Body body);
 
     template <typename Iterable>
     NBodySystemBuilder& addBodies(const Iterable& bodies) {
@@ -24,7 +24,7 @@ public:
         return *this;
     }
 
-    NBodySystemBuilder& addBodies(std::initializer_list<Body::Body> bodies) {
+    NBodySystemBuilder& addBodies(std::initializer_list<Body> bodies) {
         for (const auto& body : bodies) {
             system.addBody(body);
         }   

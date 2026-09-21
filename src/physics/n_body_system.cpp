@@ -11,7 +11,7 @@ float NBodySystem::distance(const Vec3& a, const Vec3& b) {
     return delta.length();
 }
 
-void NBodySystem::addBody(const Body::Body& b) {
+void NBodySystem::addBody(const Body& b) {
     bodies.push_back(b);
 }
 
@@ -19,7 +19,7 @@ void NBodySystem::setBodyPosition(int index, const Vec3& pos) {
     bodies[index].setPosition(pos);
 }
 
-const std::vector<Body::Body>& NBodySystem::getBodies() const {
+const std::vector<Body>& NBodySystem::getBodies() const {
     return bodies;
 }
 
@@ -28,7 +28,7 @@ const float NBodySystem::getTimeStep() const {
 }
 
 // Acumula forças gravitacionais entre todos os pares O(n²)
-static void accumulateGravity(std::vector<Body::Body>& bodies) {
+static void accumulateGravity(std::vector<Body>& bodies) {
     const std::size_t n = bodies.size();
 
     for (std::size_t i = 0; i < n; ++i) {
@@ -45,7 +45,7 @@ static void accumulateGravity(std::vector<Body::Body>& bodies) {
     }
 }
 
-void NBodySystem::handleCollision(const Body::Body& b1, const Body::Body& b2) {
+void NBodySystem::handleCollision(const Body& b1, const Body& b2) {
     // placeholder — colisões elásticas podem ser adicionadas aqui
     (void)b1;
     (void)b2;

@@ -19,6 +19,6 @@ BodyBuilder& BodyBuilder::setRadius(float radius) {
     return *this;
 }
 
-Body::Body BodyBuilder::build() {
+Body BodyBuilder::build() {
     return std::move(body);
 }

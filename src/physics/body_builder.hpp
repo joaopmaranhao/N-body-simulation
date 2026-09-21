@@ -9,10 +9,10 @@ public:
     BodyBuilder& setVelocity(const Vec3& velocity);
     BodyBuilder& setMass(float mass);
     BodyBuilder& setRadius(float radius);
-    Body::Body build();
+    Body build();
 
 private:
-    Body::Body body;
+    Body body;
 };
 
 #endif // BODY_BUILDER_HPP

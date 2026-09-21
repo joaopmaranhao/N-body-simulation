@@ -230,7 +230,7 @@ void Renderer3D::buildSphereMesh() {
 
 // -----------------------------------------------------------------------------
 // Preenche o instanceVBO com posição, raio e cor de cada corpo.
-void Renderer3D::updateInstanceBuffer(const std::vector<Body::Body>& bodies) {
+void Renderer3D::updateInstanceBuffer(const std::vector<Body>& bodies) {
     // Calcula min/max de velocidade para normalizar a cor
     float minSpeed = 1e30f, maxSpeed = 0.0f;
     for (const auto& b : bodies) {
@@ -294,7 +294,7 @@ void Renderer3D::updateCamera() {
 }
 
 // -----------------------------------------------------------------------------
-void Renderer3D::render(const std::vector<Body::Body>& bodies, float /*dt*/) {
+void Renderer3D::render(const std::vector<Body>& bodies, float /*dt*/) {
     glClearColor(0.05f, 0.05f, 0.08f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 

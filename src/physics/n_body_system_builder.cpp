@@ -7,12 +7,12 @@ NBodySystemBuilder& NBodySystemBuilder::addBody(
     float mass,
     float radius
 ) {
-    system.addBody(Body::Body(position, velocity, mass, radius));
+    system.addBody(Body(position, velocity, mass, radius));
     return *this;
 }
 
 NBodySystemBuilder& NBodySystemBuilder::addBody(
-    Body::Body body
+    Body body
 ) {
     system.addBody(body);
     return *this;

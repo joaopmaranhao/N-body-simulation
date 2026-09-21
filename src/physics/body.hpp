@@ -10,8 +10,6 @@
 
 #include "../math/vec3.hpp"
 
-namespace Body{
-
 struct Body{
     private:
         Vec3 position;
@@ -77,7 +75,5 @@ struct Body{
                 //implementation later
         }
 };
-
-}
 
 #endif
