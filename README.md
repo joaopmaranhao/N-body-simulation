@@ -48,7 +48,7 @@ The project requires CMake, a C++17 compiler, OpenGL, GLFW, and GLM installed on
 
 ## Structure and API
 
-- `Body::Body`: represents a body with position, velocity, mass, and radius.
+- `Body`: represents a body with position, velocity, mass, and radius.
 - `BodyBuilder`: creates bodies through chained method calls.
 - `NBodySystemBuilder`: collects bodies and constructs an `NBodySystem`.
 - `NBodySystem`: calculates forces and advances the simulation.
